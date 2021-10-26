@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+    <param name="robot_description" command="cat $(find togo_description)/urdf/umbc_husky_full.urdf" />
+</launch>
+
