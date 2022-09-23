@@ -33,6 +33,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <arg name="kinova_robotSerial" default="not_set" />
     <arg name="use_jaco_v1_fingers" default="false" />
     <arg name="feedback_publish_rate" default="0.1" />
+    <arg name="fps_limit" default="10.0" />
 
     <!-- Husky harware driver -->
     <node pkg="husky_base" type="husky_node" name="husky_node">
@@ -112,10 +113,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <rosparam command="load" file="$(find husky_base)/config/diagnostics.yaml"/>
     </node>
 
-
     <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
         <arg name="publish_tf" value="true" />
-        <arg name="fps_limit" value="1" />
+        <arg name="fps_limit" value="$(arg fps_limit)" />
     </include>
-
 </launch>

@@ -20,7 +20,6 @@
   <!-- Run gripper command action server, which receives planned motion goal under "gripper_command". After receiving the command from Moveit Rviz Plugin, this node act as an actionlib client and send the goal to the finger position action server from kinova_driver.  -->
   <node name="j2n6s300_gripper_command_action_server" pkg="kinova_driver" type="gripper_command_action_server" output="screen" respawn="false" args="j2n6s300"/>
 
-
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(find togo_moveit_config)/launch/togo_movegroup.launch">
     <arg name="allow_trajectory_execution" value="true"/>
@@ -33,8 +32,5 @@
 
   <!-- kinova-driver Controller parameters-->  
   <rosparam file="$(find togo_moveit_config)/config/controllers.yaml"/>
-
-
-
 
 </launch>

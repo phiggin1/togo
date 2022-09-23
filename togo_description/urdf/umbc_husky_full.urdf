@@ -442,7 +442,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <joint name="top_plate_to_kinect2" type="fixed">
     <parent link="top_plate_link"/>
     <child link="kinect2_link"/>
-    <origin rpy="-1.57079633 0 -1.57079633" xyz="-0.30 -0.08 0.57"/> 
+    <origin rpy="-1.57079633 0 -1.57079633" xyz="-0.30 -0.1 0.57"/> 
   </joint>
   <!-- links      		mesh_no
    base           		0
@@ -483,7 +483,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <parent link="top_plate_link"/>
     <child link="right_arm_link"/>
     <!-- org <origin xyz="0.21 -0.197 0.315" rpy="0 0 1.57079633" /> -->
-    <origin rpy="0 0 0" xyz="0.21 -0.197 0.315"/>
+    <origin rpy="0 0 0" xyz="0.22 -0.197 0.315"/>
   </joint>
   <!-- ros_control plugin -->
   <!-- <gazebo>
@@ -907,7 +907,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <parent link="j2n6s300_link_6"/>
     <child link="j2n6s300_link_finger_1"/>
     <axis xyz="0 0 1"/>
-    <origin rpy="-1.570796327 .649262481663582 1.35961148639407" xyz="0.00279 0.03126 -0.11467"/>
+    <origin rpy="-1.7047873384941834 0.6476144647144773 1.67317415161155" xyz="0.00279 0.03126 -0.11467"/>
     <limit effort="2" lower="0" upper="1.51" velocity="1"/>
   </joint>
   <transmission name="j2n6s300_joint_finger_1_trans">
